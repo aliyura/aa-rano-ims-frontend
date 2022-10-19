@@ -1,15 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import DashBody from "./DashBody";
 
 const SiteBody = () => {
   return (
     <div classname="">
-      <div class="layout-wrapper layout-content-navbar">
-        <div class="layout-container">
+      <div className="layout-wrapper layout-content-navbar">
+        <div className="layout-container">
           <Sidebar />
-          <div class="layout-page">
+          <div className="layout-page">
             <Navbar />
+            <div className="content-wrapper">
+              <DashBody />
+            </div>
           </div>
         </div>
       </div>

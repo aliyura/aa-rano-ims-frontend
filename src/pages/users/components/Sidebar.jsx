@@ -9,7 +9,7 @@ const Sidebar = () => {
         className="layout-menu menu-vertical menu bg-menu-theme"
       >
         <div className="app-brand demo">
-          <a href="index.html" class="app-brand-link">
+          <a href="index.html" className="app-brand-link">
             <span className="app-brand-logo demo">{/* logo here */}</span>
             <span className="app-brand-text demo menu-text fw-bolder ms-2">
               Sneat
@@ -28,14 +28,14 @@ const Sidebar = () => {
 
         <ul className="menu-inner py-1">
           <li className="menu-item active">
-            <a href="index.html" class="menu-link">
+            <a href="index.html" className="menu-link">
               <i className="menu-icon tf-icons bx bx-home-circle"></i>
               <div data-i18n="Analytics">Dashboard</div>
             </a>
           </li>
 
           <li className="menu-item">
-            <a href="/" className="menu-link menu-toggle">
+            <a href="/" class="menu-link menu-toggle">
               <i className="menu-icon tf-icons bx bx-layout"></i>
               <div data-i18n="Layouts">Layouts</div>
             </a>
@@ -73,7 +73,7 @@ const Sidebar = () => {
             <span className="menu-header-text">Pages</span>
           </li>
           <li className="menu-item">
-            <a href="/" class="menu-link menu-toggle">
+            <a href="/" className="menu-link menu-toggle">
               <i className="menu-icon tf-icons bx bx-dock-top"></i>
               <div data-i18n="Account Settings">Account Settings</div>
             </a>
@@ -94,7 +94,7 @@ const Sidebar = () => {
                   <div data-i18n="Notifications">Notifications</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li className="menu-item">
                 <a
                   href="pages-account-settings-connections.html"
                   className="menu-link"
@@ -105,7 +105,7 @@ const Sidebar = () => {
             </ul>
           </li>
           <li className="menu-item">
-            <a href="/" class="menu-link menu-toggle">
+            <a href="/" className="menu-link menu-toggle">
               <i className="menu-icon tf-icons bx bx-lock-open-alt"></i>
               <div data-i18n="Authentications">Authentications</div>
             </a>
@@ -113,13 +113,13 @@ const Sidebar = () => {
               <li className="menu-item">
                 <a
                   href="auth-login-basic.html"
-                  className="menu-link"
+                  class="menu-link"
                   target="_blank"
                 >
                   <div data-i18n="Basic">Login</div>
                 </a>
               </li>
-              <li className="menu-item">
+              <li class="menu-item">
                 <a
                   href="auth-register-basic.html"
                   className="menu-link"
@@ -170,6 +170,114 @@ const Sidebar = () => {
               <i className="menu-icon tf-icons bx bx-collection"></i>
               <div data-i18n="Basic">Cards</div>
             </a>
+          </li>
+
+          <li className="menu-item">
+            <a href="/" className="menu-link menu-toggle">
+              <i className="menu-icon tf-icons bx bx-box"></i>
+              <div data-i18n="User interface">User interface</div>
+            </a>
+            <ul className="menu-sub">
+              <li className="menu-item">
+                <a href="ui-accordion.html" className="menu-link">
+                  <div data-i18n="Accordion">Accordion</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-alerts.html" className="menu-link">
+                  <div data-i18n="Alerts">Alerts</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-badges.html" className="menu-link">
+                  <div data-i18n="Badges">Badges</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-buttons.html" className="menu-link">
+                  <div data-i18n="Buttons">Buttons</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-carousel.html" className="menu-link">
+                  <div data-i18n="Carousel">Carousel</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-collapse.html" className="menu-link">
+                  <div data-i18n="Collapse">Collapse</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-dropdowns.html" className="menu-link">
+                  <div data-i18n="Dropdowns">Dropdowns</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-footer.html" className="menu-link">
+                  <div data-i18n="Footer">Footer</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-list-groups.html" className="menu-link">
+                  <div data-i18n="List Groups">List groups</div>
+                </a>
+              </li>
+              <li class="Namemenu-item">
+                <a href="ui-modals.html" className="menu-link">
+                  <div data-i18n="Modals">Modals</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-navbar.html" className="menu-link">
+                  <div data-i18n="Navbar">Navbar</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-offcanvas.html" className="menu-link">
+                  <div data-i18n="Offcanvas">Offcanvas</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-pagination-breadcrumbs.html" className="menu-link">
+                  <div data-i18n="Pagination &amp; Breadcrumbs">
+                    Pagination &amp; Breadcrumbs
+                  </div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-progress.html" className="menu-link">
+                  <div data-i18n="Progress">Progress</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-spinners.html" className="menu-link">
+                  <div data-i18n="Spinners">Spinners</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-tabs-pills.html" className="menu-link">
+                  <div data-i18n="Tabs &amp; Pills">Tabs &amp; Pills</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-toasts.html" className="menu-link">
+                  <div data-i18n="Toasts">Toasts</div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-tooltips-popovers.html" className="menu-link">
+                  <div data-i18n="Tooltips & Popovers">
+                    Tooltips &amp; popovers
+                  </div>
+                </a>
+              </li>
+              <li className="menu-item">
+                <a href="ui-typography.html" className="menu-link">
+                  <div data-i18n="Typography">Typography</div>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </aside>
