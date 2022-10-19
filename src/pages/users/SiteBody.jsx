@@ -15,9 +15,9 @@ const SiteBody = ({ children }) => {
               <div className="content">{children}</div>
             </div>
             <Footer />
-            <div class="content-backdrop fade"></div>
+            <div className="content-backdrop fade"></div>
           </div>
-          <div class="layout-overlay layout-menu-toggle"></div>
+          <div className="layout-overlay layout-menu-toggle"></div>
         </div>
       </div>
     </div>
