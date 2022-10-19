@@ -1,10 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+//css
+import "./assets/css/demo.css";
+import "./assets/vendor/css/core.css";
+import "./assets/vendor/css/theme-default.css";
+import "./assets/vendor/css/pages/page-account-settings.css";
+import "./assets/vendor/css/pages/page-auth.css";
+import "./assets/vendor/css/pages/page-icons.css";
+import "./assets/vendor/css/pages/page-misc.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
