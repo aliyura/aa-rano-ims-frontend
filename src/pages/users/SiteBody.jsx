@@ -8,6 +8,9 @@ const SiteBody = () => {
       <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
           <Sidebar />
+          <div class="layout-page">
+            <Navbar />
+          </div>
         </div>
       </div>
     </div>
