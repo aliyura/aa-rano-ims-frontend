@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import DashBody from "./DashBody";
 
-const SiteBody = () => {
+const SiteBody = ({ children }) => {
   return (
     <div classname="">
       <div className="layout-wrapper layout-content-navbar">
@@ -12,7 +12,8 @@ const SiteBody = () => {
           <div className="layout-page">
             <Navbar />
             <div className="content-wrapper">
-              <DashBody />
+              <div className="content">{children}</div>
+              {/* <DashBody /> */}
             </div>
           </div>
         </div>

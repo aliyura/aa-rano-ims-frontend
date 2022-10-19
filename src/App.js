@@ -1,9 +1,9 @@
-import SiteBody from "./pages/users/SiteBody";
+import Dashboard from "./pages/users/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <SiteBody />
+      <Dashboard />
     </div>
   );
 }

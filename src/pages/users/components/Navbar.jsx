@@ -1,5 +1,5 @@
 import React from "react";
-
+import Logo from "../../../assets/img/avatars/1.png";
 const Navbar = () => {
   return (
     <div>
@@ -52,7 +52,7 @@ const Navbar = () => {
               >
                 <div class="avatar avatar-online">
                   <img
-                    src="../assets/img/avatars/1.png"
+                    src={Logo}
                     alt=""
                     className="w-px-40 h-auto rounded-circle"
                   />
