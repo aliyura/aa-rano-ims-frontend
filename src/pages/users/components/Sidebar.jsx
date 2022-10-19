@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import "boxicons";
 
 const Sidebar = () => {
+  const [showProfile, setShowProfile] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState({
+    profile: false,
+  });
+  const closeAll = () => {
+    setShowProfile(false);
+    setActiveDropdown({
+      profile: false,
+      resource: false,
+      users: false,
+      top: false,
+    });
+  };
+  const profileDropDown = () => {
+    closeAll();
+    setShowProfile(true);
+    setActiveDropdown({ profile: true });
+  };
   return (
     <div>
       {" "}
@@ -34,13 +53,19 @@ const Sidebar = () => {
             </a>
           </li>
 
-          <li className="menu-item">
-            <a href="/" class="menu-link menu-toggle">
+          <li className={"menu-item" + (showProfile ? "show" : "")}>
+            <div
+              class={
+                activeDropdown.profile
+                  ? "menu-link menu-toggle"
+                  : "menu-link menu-toggle"
+              }
+            >
               <i className="menu-icon tf-icons bx bx-layout"></i>
-              <div data-i18n="Layouts">Layouts</div>
-            </a>
+              <div onClick={() => profileDropDown()}>Layouts</div>
+            </div>
 
-            <ul className="menu-sub">
+            <ul className={"menu-sub" + (showProfile ? " show" : "")}>
               <li className="menu-item">
                 <a href="layouts-without-menu.html" className="menu-link">
                   <div data-i18n="Without menu">Without menu</div>
